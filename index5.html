@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- React Library -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- React DOM Library -->
+    <script src="https:/unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- Babel Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title>Let's React!</title>
+</head>
+<body>
+    <!-- Designated location to insert React content-->
+
+    <div id="app">React has not rendered yet</div>
+
+    <!-- JavaScript -->
+    <script type="text/babel">
+    
+    // render React to the DOM, accepts two arguments (React WHAT, React WHERE)
+    // Challenge: render 3 elements to the dom
+    ReactDOM.render(
+        //what
+        <div>
+            <h1>Title</h1>
+            <h2>Subtitle</h2>
+            <h3>Content</h3>
+        </div>,
+        //where
+        document.getElementById("app")
+    );
+
+    </script>
+
+</body>
+</html>
