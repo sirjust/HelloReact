@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- React Library -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- React DOM Library -->
+    <script src="https:/unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- Babel Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title>Let's React!</title>
+</head>
+<body>
+    <!-- Designated location to insert React content-->
+
+    <div id="app1">React has not rendered yet</div>
+    <div id="app2">React has not rendered yet</div>
+    <div id="app3">React has not rendered yet</div>
+
+    <!-- JavaScript -->
+    <script type="text/babel">
+    
+    // render React to the DOM, accepts two arguments (React WHAT, React WHERE)
+
+    // CHALLENGE: Render a paragraph to the DOM with the content "I am a paragraph"
+    // Render an anchor tag that links to google homepage (use href attribute)
+    // Render an unordered list to the DOM and input 3 list items (to do list)
+    ReactDOM.render(
+        // React WHAT - JSX
+        <p>I am a paragraph</p>,
+        // React WHERE - Div with ID of "app"
+        document.getElementById("app1")
+    );
+    ReactDOM.render(
+        // React WHAT - JSX
+        <a href="https://www.google.com">visit google</a>,
+        // React WHERE - Div with ID of "app"
+        document.getElementById("app2")
+    );
+    ReactDOM.render(
+        // React WHAT - JSX
+        <ul id="todo_list">
+            <li>p/u f-mem</li>
+            <li>edit r-doc</li>
+            <li>complete v-2</li>
+        </ul>,
+        // React WHERE - Div with ID of "app"
+        document.getElementById("app3")
+    );
+    </script>
+
+</body>
+</html>
